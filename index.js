@@ -30,6 +30,9 @@ glob(fileGlob, function (err, files) {
   debug('Making sure translations are unique')
   strings = deepUnique(strings)
 
+  debug('Sort translations')
+  strings.sort()
+
   debug('Converting ' + strings.length + ' translation keys into gettext')
   var gettextContent = convert(strings)
 
