@@ -59,3 +59,15 @@ extract(string) // -> ['Text', 'Text2', ['Singular', 'Plural']]
 const convert = require('react-globe-cli/convert')
 convert(extractedArray) // -> gettext file as a string, ready for writing
 ```
+
+## Debugging
+
+This module uses [debug](https://github.com/visionmedia/debug).
+
+```bash
+DEBUG='react-globe-cli' react-globe-cli --files='./src/**/*.js' --output='templates.pot'
+```
+
+## Licence
+
+MIT

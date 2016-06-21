@@ -24,9 +24,7 @@ glob(fileGlob, function (err, files) {
   debug('Parsing ' + files.length + ' files')
   var strings = []
   files.map(function (file) {
-    var content = fs.readFileSync(file, 'utf-8')
-    var contentStrings = extract(content)
-    strings = strings.concat(contentStrings)
+    strings = strings.concat(parseFile(file))
   })
 
   debug('Making sure translations are unique')
@@ -38,6 +36,20 @@ glob(fileGlob, function (err, files) {
   debug('Writing into output file')
   fs.writeFileSync(outputFile, gettextContent, 'utf-8')
 })
+
+function parseFile (file) {
+  debug('Parsing ' + file)
+
+  try {
+    var content = fs.readFileSync(file, 'utf-8')
+    var strings = extract(content)
+  } catch (e) {
+    console.log('Parsing error in file "' + file + '":\n', e)
+    process.exit(1)
+  }
+
+  return strings
+}
 
 function deepUnique (array) {
   array = array.map(JSON.stringify)
