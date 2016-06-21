@@ -1,0 +1,36 @@
+{
+  "name": "react-globe-cli",
+  "version": "0.1.0",
+  "description": "A CLI tool for extracting a gettext POT file from multiple JS source files using react-globe",
+  "main": "index.js",
+  "dependencies": {
+    "ast-types": "^0.8.16",
+    "debug": "^2.2.0",
+    "glob": "^7.0.5",
+    "minimist": "^1.2.0",
+    "recast": "^0.11.8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/queicherius/react-globe-cli.git"
+  },
+  "keywords": [
+    "react",
+    "globe",
+    "localization",
+    "internationalization",
+    "cli",
+    "extract",
+    "gettext"
+  ],
+  "author": "queicherius@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/queicherius/react-globe-cli/issues"
+  },
+  "homepage": "https://github.com/queicherius/react-globe-cli#readme"
+}
