@@ -1,6 +1,6 @@
 # react-globe-cli
 
-> A CLI tool for extracting a gettext POT file from multiple JS source files using [react-globe](https://github.com/queicherius/react-globe)
+> A CLI tool for extracting a gettext POT file from multiple JS or TS source files using [react-globe](https://github.com/queicherius/react-globe)
 
 ## Install
 
@@ -16,8 +16,8 @@ react-globe-cli --files='./src/**/*.js' --output='templates.pot'
 ```
 
 > **Note:** Make sure you are running this on unminified source code, since it requires the
-> `t` and `tPlural` function calls to keep their names. It should be fine with parsing es2015 
-> and jsx code, but if you are using bleeding edge (e.g. the `stage-0` babel plugin)
+> `t` and `tPlural` function calls to keep their names. It should be fine with parsing es2015, 
+> jsx and TypeScript code, but if you are using bleeding edge (e.g. the `stage-0` babel plugin)
 > you will have to pre-compile that.
 
 ## Example
