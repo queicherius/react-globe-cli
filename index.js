@@ -45,7 +45,7 @@ function parseFile (file) {
 
   try {
     var content = fs.readFileSync(file, 'utf-8')
-    var strings = extract(content)
+    var strings = extract(content, file)
   } catch (e) {
     console.log('Parsing error in file "' + file + '":\n', e)
     process.exit(1)
