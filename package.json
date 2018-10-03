@@ -1,6 +1,6 @@
 {
   "name": "react-globe-cli",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A CLI tool for extracting a gettext POT file from multiple JS source files using react-globe",
   "main": "index.js",
   "bin": {
