@@ -1,3 +1,7 @@
+### :boom: Careful: This package is no longer maintained and is only here for historic reasons. This means you should very likely not use it. You have been warned. :boom:
+
+---
+
 # react-globe-cli
 
 > A CLI tool for extracting a gettext POT file from multiple JS or TS source files using [react-globe](https://github.com/queicherius/react-globe)
